@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tourisme à Paris 2021</title>
+    <script src="https://kit.fontawesome.com/8e77005267.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./assets/css/reset.css" />
+    <link rel="stylesheet" href="./assets/css/stylesheet.css" />
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <script src="./assets/js/script.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <div class="container">
+        <div>
+          <i class="fas fa-bars hidden-768"></i>
+          <img src="./assets/img/logo.svg" alt="logo_tripadvisor" />
+          <i class="fas fa-search hidden-768"></i>
+          <div class="relative input">
+            <span><i class="fas fa-search"></i></span>
+            <input type="text" />
+          </div>
+        </div>
+
+        <ul class="list-inline">
+          <li>
+            <a href="#"><i class="fas fa-pencil-alt"></i> <span class="show-1024"> Avis</span></a>
+          </li>
+          <li>
+            <a href="#"><i class="far fa-bell"></i><span class="show-1024"> Alertes</span></a>
+          </li>
+          <li>
+            <a href="#"><i class="far fa-heart"></i><span class="show-1024"> Voyages</span></a>
+          </li>
+          <li><a href="#" id="btn-connexion" class="btn-black"> Connectez-vous</a></li>
+        </ul>
+      </div>
+      <div id="open-modal" class=""></div>
+    </header>
+
+    <div class="space-100"></div>
+
+    <main class="container">
+      <h1><span>Explorez</span> Paris</h1>
+
+      <!-- nav -->
+      <nav>
+        <a href="#">
+          <div>
+            <span>Hôtels</span>
+            <i class="fas fa-bed"></i>
+          </div>
+        </a>
+        <a href="#">
+          <div>
+            <span>Location de vacances</span>
+            <i class="fas fa-key"></i>
+          </div>
+        </a>
+        <a href="#">
+          <div>
+            <span>Activités</span>
+            <i class="fas fa-ticket-alt"></i>
+          </div>
+        </a>
+        <a href="#">
+          <div>
+            <span>Restaurants</span>
+            <i class="fas fa-utensils"></i>
+          </div>
+        </a>
+        <a href="#">
+          <div>
+            <span>Forums de voyage</span>
+            <i class="far fa-comment-alt"></i>
+          </div>
+        </a>
+        <a href="#">
+          <div>
+            <span>Vols</span>
+            <i class="fas fa-plane-departure"></i>
+          </div>
+        </a>
+        <a href="#" class="hidden-1184">
+          <div>
+            <span>Croisière</span>
+            <i class="fas fa-anchor"></i>
+          </div>
+        </a>
+        <a href="#">
+          <div>
+            <span>Plus</span>
+            <i class="fas fa-ellipsis-h"></i>
+          </div>
+        </a>
+      </nav>
+
+      <div class="space-20"></div>
+
+      <!-- images -->
+
+      <div class="image-container">
+        <a href="#" class="btn-black"> <i class="fas fa-image"></i> Toutes les photos </a>
+
+        <a href="#" class="column-1">
+          <img src="./assets/img/imageDiapo1.jpg" alt="" />
+        </a>
+
+        <a href="#" class="column-2 show-768">
+          <img src="./assets/img/imageDiapo2.jpg" alt="" />
+
+          <img src="./assets/img/imageDiapo3.jpeg" alt="" />
+        </a>
+      </div>
+
+      <div class="space-20"></div>
+
+      <div class="nav-horizontale show-768">
+        <ul class="list-inline">
+          <li><a href="#">Europe</a></li>
+          <li>></li>
+          <li><a href="#">France</a></li>
+          <li>></li>
+          <li><a href="#">Ile-de-France</a></li>
+          <li>></li>
+          <li>
+            <a href="#">Paris <i class="fas fa-chevron-circle-down"></i></a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="space-50"></div>
+
+      <!-- text 2 columns -->
+      <div class="container-text">
+        <div class="column-1">
+          <h2>La Ville Lumière éblouit en tous points</h2>
+          <p class="font-serif">
+            Aucun autre endroit au monde ne fait autant rêver que Paris. La ville séduit par son art, son architecture,
+            sa culture et sa cuisine, mais il y a aussi des merveilles plus discrètes qui n’attendent qu’à être
+            explorées : les ruelles pavées pittoresques, les pâtisseries au coin de la rue et les petits bistrots
+            douillets qui vous invitent à boire un verre de beaujolais. Préparez-vous à vous approprier Paris.
+          </p>
+        </div>
+        <div class="column-2">
+          <div>
+            <h3>Paris : commencez à organiser !</h3>
+            <p>Créez un voyage pour enregistrer et organiser toutes vos idées et les visualiser sur une carte.</p>
+            <div class="space-50"></div>
+            <a href="#" class="btn-black">Créez un voyage</a>
+          </div>
+          <img src="./assets/img/map.png" alt="" width="381" />
+        </div>
+      </div>
+
+      <div class="space-50"></div>
+
+      <!-- section 1 -->
+      <section>
+        <h2>Paris : les immanquables</h2>
+        <div class="section1">
+          <div class="categorie">
+            <h4>Se divertir</h4>
+            <p class="font-serif">Des lieux à voir, des rues à explorer et des expériences emblématiques à Paris.</p>
+            <br />
+            <a href="#" class="btn-affichage">Tout afficher</a>
+          </div>
+
+          <div class="carroussel">
+            <a href="#">
+              <div class="relative">
+                <img src="./assets/img/eiffeltoren.jpeg" alt="" />
+
+                <div class="icon-heart">
+                  <i class="far fa-heart"></i>
+                </div>
+                <div class="icon-tripadvisor">
+                  <img src="./assets/img/Tripadvisor_logoset_solid_green.svg" alt="" />
+                  <span>2020</span>
+                </div>
+              </div>
+              <div>
+                <h6>Tour Eiffel</h6>
+                <p class="icon-circle">
+                  <i class="fas fa-circle"></i><i class="fas fa-circle"></i><i class="fas fa-circle"></i
+                  ><i class="fas fa-circle"></i><i class="far fa-circle"></i>
+                  140255
+                </p>
+                <p>Tours et plateforme d'observation, Monuments & Points d'intérêt</p>
+              </div>
+            </a>
+
+            <a href="#">
+              <div class="relative">
+                <img src="./assets/img/louvre.jpeg" alt="" />
+
+                <div class="icon-heart">
+                  <i class="far fa-heart"></i>
+                </div>
+                <div class="icon-tripadvisor">
+                  <img src="./assets/img/Tripadvisor_logoset_solid_green.svg" alt="" />
+                  <span>2020</span>
+                </div>
+              </div>
+              <div>
+                <h6>Musée du Louvre</h6>
+                <p class="icon-circle">
+                  <i class="fas fa-circle"></i><i class="fas fa-circle"></i><i class="fas fa-circle"></i
+                  ><i class="fas fa-circle"></i><i class="far fa-circle"></i>
+                  10863
+                </p>
+                <p>Bâtiments architecturaux, Musée d'art</p>
+              </div>
+            </a>
+
+            <a href="#">
+              <div class="relative">
+                <img src="./assets/img/arc-de-triomphe.jpeg" alt="" />
+
+                <div class="icon-heart">
+                  <i class="far fa-heart"></i>
+                </div>
+                <div class="icon-tripadvisor">
+                  <img src="./assets/img/Tripadvisor_logoset_solid_green.svg" alt="" />
+                  <span>2020</span>
+                </div>
+              </div>
+              <div>
+                <h6>Arc de Triomphe</h6>
+                <p class="icon-circle">
+                  <i class="fas fa-circle"></i><i class="fas fa-circle"></i><i class="fas fa-circle"></i
+                  ><i class="fas fa-circle"></i><i class="far fa-circle"></i>
+                  45103
+                </p>
+                <p>Bâtiments architecturaux, Sites historiques</p>
+              </div>
+            </a>
+
+            <a href="#">
+              <div class="relative">
+                <img src="./assets/img/rodin.jpg" alt="" />
+
+                <div class="icon-heart">
+                  <i class="far fa-heart"></i>
+                </div>
+                <div class="icon-tripadvisor">
+                  <img src="./assets/img/Tripadvisor_logoset_solid_green.svg" alt="" />
+                  <span>2020</span>
+                </div>
+              </div>
+              <div>
+                <h6>Musée Rodin</h6>
+                <p class="icon-circle">
+                  <i class="fas fa-circle"></i><i class="fas fa-circle"></i><i class="fas fa-circle"></i
+                  ><i class="fas fa-circle"></i><i class="far fa-circle"></i>
+                  12456
+                </p>
+                <p>Musées Spécialisées</p>
+              </div>
+            </a>
+
+            <a href="#">
+              <div class="relative">
+                <img src="./assets/img/cathedrale.jpg" alt="" />
+
+                <div class="icon-heart">
+                  <i class="far fa-heart"></i>
+                </div>
+                <div class="icon-tripadvisor">
+                  <img src="./assets/img/Tripadvisor_logoset_solid_green.svg" alt="" />
+                  <span>2020</span>
+                </div>
+              </div>
+              <div>
+                <h6>Cathédrale Notre-Dame-De-Paris</h6>
+                <p class="icon-circle">
+                  <i class="fas fa-circle"></i><i class="fas fa-circle"></i><i class="fas fa-circle"></i
+                  ><i class="fas fa-circle"></i><i class="far fa-circle"></i>
+                  12456
+                </p>
+                <p>Bâtiments architecturaux, Sites historiques</p>
+              </div>
+            </a>
+
+            <a href="#">
+              <div class="relative">
+                <img src="./assets/img/the-bookstore.jpg" alt="" />
+
+                <div class="icon-heart">
+                  <i class="far fa-heart"></i>
+                </div>
+                <div class="icon-tripadvisor">
+                  <img src="./assets/img/Tripadvisor_logoset_solid_green.svg" alt="" />
+                  <span>2020</span>
+                </div>
+              </div>
+              <div>
+                <h6>Librairie Shakespeare and Compagny</h6>
+                <p class="icon-circle">
+                  <i class="fas fa-circle"></i><i class="fas fa-circle"></i><i class="fas fa-circle"></i
+                  ><i class="fas fa-circle"></i><i class="far fa-circle"></i>
+                  3920
+                </p>
+                <p>Bibliothèques, Grands agasins</p>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="space-100"></div>
+
+        <div class="section1">
+          <div class="categorie">
+            <h4>Se reposer</h4>
+            <p class="font-serif">Un mélange de charme, de symboles et de modernité.</p>
+            <br />
+            <a href="#" class="btn-affichage">Tout afficher</a>
+          </div>
+
+          <div class="carroussel">
+            <a href="#">
+              <div class="relative">
+                <img src="./assets/img/bristol.jpg" alt="" />
+
+                <div class="icon-heart">
+                  <i class="far fa-heart"></i>
+                </div>
+                <div class="icon-tripadvisor">
+                  <img src="./assets/img/Tripadvisor_logoset_solid_green.svg" alt="" />
+                  <span>2021</span>
+                </div>
+              </div>
+              <div>
+                <h6>Le Bristol Paris</h6>
+                <p class="icon-circle">
+                  <i class="fas fa-circle"></i><i class="fas fa-circle"></i><i class="fas fa-circle"></i
+                  ><i class="fas fa-circle"></i><i class="fas fa-circle"></i>
+                  2087
+                </p>
+              </div>
+            </a>
+
+            <a href="#">
+              <div class="relative">
+                <img src="./assets/img/lobby.jpg" alt="" />
+
+                <div class="icon-heart">
+                  <i class="far fa-heart"></i>
+                </div>
+                <div class="icon-tripadvisor">
+                  <img src="./assets/img/Tripadvisor_logoset_solid_green.svg" alt="" />
+                  <span>2020</span>
+                </div>
+              </div>
+              <div>
+                <h6>La Réserve - Hôtel & Spa</h6>
+                <p class="icon-circle">
+                  <i class="fas fa-circle"></i><i class="fas fa-circle"></i><i class="fas fa-circle"></i
+                  ><i class="fas fa-circle"></i><i class="fas fa-circle"></i>
+                  490
+                </p>
+              </div>
+            </a>
+
+            <a href="#">
+              <div class="relative">
+                <img src="./assets/img/exterior.jpg" alt="" />
+
+                <div class="icon-heart">
+                  <i class="far fa-heart"></i>
+                </div>
+                <div class="icon-tripadvisor">
+                  <img src="./assets/img/Tripadvisor_logoset_solid_green.svg" alt="" />
+                  <span>2020</span>
+                </div>
+              </div>
+              <div>
+                <h6>Four Seasons Hotel George V</h6>
+                <p class="icon-circle">
+                  <i class="fas fa-circle"></i><i class="fas fa-circle"></i><i class="fas fa-circle"></i
+                  ><i class="fas fa-circle"></i><i class="fas fa-circle"></i>
+                  3076
+                </p>
+              </div>
+            </a>
+
+            <a href="#">
+              <div class="relative">
+                <img src="./assets/img/exterior (1).jpg" alt="" />
+
+                <div class="icon-heart">
+                  <i class="far fa-heart"></i>
+                </div>
+                <div class="icon-tripadvisor">
+                  <img src="./assets/img/Tripadvisor_logoset_solid_green.svg" alt="" />
+                  <span>2020</span>
+                </div>
+              </div>
+              <div>
+                <h6>Hôtel de Crillon</h6>
+                <p class="icon-circle">
+                  <i class="fas fa-circle"></i><i class="fas fa-circle"></i><i class="fas fa-circle"></i
+                  ><i class="fas fa-circle"></i><i class="far fa-circle"></i>
+                  515
+                </p>
+              </div>
+            </a>
+
+            <a href="#">
+              <div class="relative">
+                <img src="./assets/img/meurice.jpg" alt="" />
+
+                <div class="icon-heart">
+                  <i class="far fa-heart"></i>
+                </div>
+                <div class="icon-tripadvisor">
+                  <img src="./assets/img/Tripadvisor_logoset_solid_green.svg" alt="" />
+                  <span>2020</span>
+                </div>
+              </div>
+              <div>
+                <h6>Le Meurice</h6>
+                <p class="icon-circle">
+                  <i class="fas fa-circle"></i><i class="fas fa-circle"></i><i class="fas fa-circle"></i
+                  ><i class="fas fa-circle"></i><i class="far fa-circle"></i>
+                  1354
+                </p>
+              </div>
+            </a>
+
+            <a href="#">
+              <div class="relative">
+                <img src="./assets/img/grands-boulevards.jpg" alt="" />
+
+                <div class="icon-heart">
+                  <i class="far fa-heart"></i>
+                </div>
+                <div class="icon-tripadvisor">
+                  <img src="./assets/img/Tripadvisor_logoset_solid_green.svg" alt="" />
+                  <span>2020</span>
+                </div>
+              </div>
+              <div>
+                <h6>Hôtel des Grands Boulevards</h6>
+                <p class="icon-circle">
+                  <i class="fas fa-circle"></i><i class="fas fa-circle"></i><i class="fas fa-circle"></i
+                  ><i class="fas fa-circle"></i><i class="far fa-circle"></i>
+                  219
+                </p>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <div class="space-100"></div>
+
+        <div class="section1">
+          <div class="categorie">
+            <h4>Se restaurer</h4>
+            <p class="font-serif">Bistrots et bars typiques, et plus encore à Paris.</p>
+            <br />
+            <a href="#" class="btn-affichage">Tout afficher</a>
+          </div>
+
+          <div class="carroussel">
+            <a href="#">
+              <div class="relative">
+                <img src="./assets/img/plat.jpg" alt="" />
+
+                <div class="icon-heart">
+                  <i class="far fa-heart"></i>
+                </div>
+                <div class="icon-tripadvisor">
+                  <img src="./assets/img/Tripadvisor_logoset_solid_green.svg" alt="" />
+                  <span>2021</span>
+                </div>
+              </div>
+              <div>
+                <h6>Verjus</h6>
+                <p class="icon-circle">
+                  <i class="fas fa-circle"></i><i class="fas fa-circle"></i><i class="fas fa-circle"></i
+                  ><i class="fas fa-circle"></i><i class="far fa-circle"></i>
+                  576
+                </p>
+                <p>€€€€ - Française, Européenne, Moderne</p>
+              </div>
+            </a>
+
+            <a href="#">
+              <div class="relative">
+                <img src="./assets/img/plat2.jpg" alt="" />
+
+                <div class="icon-heart">
+                  <i class="far fa-heart"></i>
+                </div>
+                <div class="icon-tripadvisor">
+                  <img src="./assets/img/Tripadvisor_logoset_solid_green.svg" alt="" />
+                  <span>2020</span>
+                </div>
+              </div>
+              <div>
+                <h6>114 Faubourg</h6>
+                <p class="icon-circle">
+                  <i class="fas fa-circle"></i><i class="fas fa-circle"></i><i class="fas fa-circle"></i
+                  ><i class="fas fa-circle"></i><i class="far fa-circle"></i>
+                  1756
+                </p>
+                <p>€€€€ - Française, Européenne, Végétariens bienvenus</p>
+              </div>
+            </a>
+
+            <a href="#">
+              <div class="relative">
+                <img src="./assets/img/plat3.jpg" alt="" />
+
+                <div class="icon-heart">
+                  <i class="far fa-heart"></i>
+                </div>
+                <div class="icon-tripadvisor">
+                  <img src="./assets/img/Tripadvisor_logoset_solid_green.svg" alt="" />
+                  <span>2020</span>
+                </div>
+              </div>
+              <div>
+                <h6>Frenchie</h6>
+                <p class="icon-circle">
+                  <i class="fas fa-circle"></i><i class="fas fa-circle"></i><i class="fas fa-circle"></i
+                  ><i class="fas fa-circle"></i><i class="far fa-circle"></i>
+                  1297
+                </p>
+                <p>€€€€ - Française, Végétariens bienvenus, Plats sans gluten</p>
+              </div>
+            </a>
+
+            <a href="#">
+              <div class="relative">
+                <img src="./assets/img/restaurant4.jpg" alt="" />
+
+                <div class="icon-heart">
+                  <i class="far fa-heart"></i>
+                </div>
+                <div class="icon-tripadvisor">
+                  <img src="./assets/img/Tripadvisor_logoset_solid_green.svg" alt="" />
+                  <span>2020</span>
+                </div>
+              </div>
+              <div>
+                <h6>La table de Colette</h6>
+                <p class="icon-circle">
+                  <i class="fas fa-circle"></i><i class="fas fa-circle"></i><i class="fas fa-circle"></i
+                  ><i class="fas fa-circle"></i><i class="fas fa-circle"></i>
+                  256
+                </p>
+                <p>€€€€ - Française, Européenne, Saine</p>
+              </div>
+            </a>
+
+            <a href="#">
+              <div class="relative">
+                <img src="./assets/img/restaurant5.jpg" alt="" />
+
+                <div class="icon-heart">
+                  <i class="far fa-heart"></i>
+                </div>
+                <div class="icon-tripadvisor">
+                  <img src="./assets/img/Tripadvisor_logoset_solid_green.svg" alt="" />
+                  <span>2020</span>
+                </div>
+              </div>
+              <div>
+                <h6>ASPIC</h6>
+                <p class="icon-circle">
+                  <i class="fas fa-circle"></i><i class="fas fa-circle"></i><i class="fas fa-circle"></i
+                  ><i class="fas fa-circle"></i><i class="fas fa-circle"></i>
+                  982
+                </p>
+                <p>€€€€ - Française, Européenne, Moderne</p>
+              </div>
+            </a>
+
+            <a href="#">
+              <div class="relative">
+                <img src="./assets/img/terrasse-de-gigi.jpg" alt="" />
+
+                <div class="icon-heart">
+                  <i class="far fa-heart"></i>
+                </div>
+                <div class="icon-tripadvisor">
+                  <img src="./assets/img/Tripadvisor_logoset_solid_green.svg" alt="" />
+                  <span>2020</span>
+                </div>
+              </div>
+              <div>
+                <h6>Crêperie Gigi</h6>
+                <p class="icon-circle">
+                  <i class="fas fa-circle"></i><i class="fas fa-circle"></i><i class="fas fa-circle"></i
+                  ><i class="fas fa-circle"></i><i class="far fa-circle"></i>
+                  228
+                </p>
+                <p>€€-€€€ - Française, Végétariens bienvenus, Choix végétaliens</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+      <div class="space-100"></div>
+
+      <!-- section 2 -->
+      <section>
+        <h2>Guide de voyageurs</h2>
+        <div class="section2">
+          <a href="#">
+            <div class="bg1"></div>
+            <div>
+              <h6>Best summer things to do in Paris | Eatwith</h6>
+              <p>36 articles</p>
+              <div class="position-icon">
+                <img src="./assets/img/eatwith.jpg" class="icon" alt="" />
+                <p>Par <span>Eatwith</span></p>
+              </div>
+            </div>
+          </a>
+          <a href="#">
+            <div class="bg2"></div>
+            <div>
+              <h6>Les 10 monuments et musées de paris à faire</h6>
+              <p>10 articles</p>
+              <div class="position-icon">
+                <img src="./assets/img/topito-com.jpg" class="icon" alt="" />
+                <p>Par <span>Topito</span></p>
+              </div>
+            </div>
+          </a>
+          <a href="#">
+            <div class="bg3"></div>
+            <div>
+              <h6>Top 10 des choses à faires ou à voir dans le 14ème</h6>
+              <p>10 articles</p>
+              <div class="position-icon">
+                <img src="./assets/img/topito-com.jpg" class="icon" alt="" />
+                <p>Par <span>Topito</span></p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <div class="space-100"></div>
+      <!-- section 3 -->
+      <section class="relative">
+        <h2>En tendance dans les forums</h2>
+        <div class="btn-affichage position-btn">Tout afficher</div>
+        <div class="section3">
+          <div>
+            <h6>Voyages touristiques à Paris</h6>
+            <div class="position-avatar">
+              <img src="./assets/img/default-avatar-2020-35.jpg" class="avatar" alt="" />
+              <p>Par <span>Khaolouch - </span> 6 réponses</p>
+            </div>
+          </div>
+          <div>
+            <h6>Hôtel avec cuisinette dans Paris même</h6>
+            <div class="position-avatar">
+              <img src="./assets/img/default-avatar-2020-38.jpg" class="avatar" alt="" />
+              <p>Par <span>Lise T - </span> 3 réponses</p>
+            </div>
+          </div>
+          <div>
+            <h6>Carte Navigo Decouvert</h6>
+            <div class="position-avatar">
+              <img src="./assets/img/default-avatar-2020-29.jpg" class="avatar" alt="" />
+              <p>Par <span>jolui - </span> 2 réponses</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <div class="space-100"></div>
+
+      <section>
+        <h2>Louez un logement pour votre prochaine escapade</h2>
+        <h4>Locations populaires à Paris</h4>
+        <div class="big-carrousel">
+          <a href="#">
+            <div class="relative">
+              <img src="./assets/img/67.jpg" alt="" />
+
+              <div class="icon-heart">
+                <i class="far fa-heart"></i>
+              </div>
+            </div>
+            <div>
+              <h6>Marais : Cottage in Paris!</h6>
+              <p class="icon-circle">
+                <i class="fas fa-circle"></i><i class="fas fa-circle"></i><i class="fas fa-circle"></i
+                ><i class="fas fa-circle"></i><i class="fas fa-circle"></i>
+                50
+              </p>
+              <p>4 couchages - 1 chambre - 1 salle de bain</p>
+              <h6>à partir de 177€/nuit</h6>
+            </div>
+          </a>
+          <a href="#">
+            <div class="relative">
+              <img src="./assets/img/66.jpg" alt="" />
+
+              <div class="icon-heart">
+                <i class="far fa-heart"></i>
+              </div>
+            </div>
+            <div>
+              <h6>Prestigious studio</h6>
+              <p class="icon-circle">
+                <i class="fas fa-circle"></i><i class="fas fa-circle"></i><i class="fas fa-circle"></i
+                ><i class="fas fa-circle"></i><i class="far fa-circle"></i>
+                72
+              </p>
+              <p>2 couchages - 1 chambre - 1 salle de bain</p>
+              <h6>à partir de 85€/nuit</h6>
+            </div>
+          </a>
+          <a href="#">
+            <div class="relative">
+              <img src="./assets/img/c6.jpg" alt="" />
+
+              <div class="icon-heart">
+                <i class="far fa-heart"></i>
+              </div>
+            </div>
+            <div>
+              <h6>Louvre Water Front Designer Apt</h6>
+              <p class="icon-circle">
+                <i class="fas fa-circle"></i><i class="fas fa-circle"></i><i class="fas fa-circle"></i
+                ><i class="fas fa-circle"></i><i class="far fa-circle"></i>
+                5
+              </p>
+              <p>3 couchages - 1 chambre - 2 salles de bain</p>
+              <h6>à partir de 408€/nuit</h6>
+            </div>
+          </a>
+        </div>
+      </section>
+      <div class="space-200"></div>
+    </main>
+
+    <footer>
+      <img src="./assets/img/Tripadvisor_logoset_solid_green.svg" alt="" />
+      <p>Made at <span>Le Reacteur</span> by <span>Emmanuelle Baron - 2021</span></p>
+    </footer>
+  </body>
+</html>
