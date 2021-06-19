@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="./assets/css/style.css" />
 
     <script src="./assets/js/script.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
   </head>
 
   <body>
@@ -39,8 +40,19 @@
           <li><a href="#" id="btn-connexion" class="btn-black"> Connectez-vous</a></li>
         </ul>
       </div>
-      <div id="open-modal" class=""></div>
     </header>
+    <div id="open-modal" class="">
+      <div class="container-modal">
+        <h2>Formulaire de contact</h2>
+        <form>
+          <input type="text" placeholder="Prénom" id="firstname" />
+          <input type="text" placeholder="Nom" id="lastname" />
+          <input type="email" placeholder="Email" id="email" />
+          <textarea placeholder="Ecrivez ici votre message" id="message" cols="30" rows="10"></textarea>
+          <a href="#"><input type="submit" id="form-connexion" value="Envoyer le formulaire" /></a>
+        </form>
+      </div>
+    </div>
 
     <div class="space-100"></div>
 
