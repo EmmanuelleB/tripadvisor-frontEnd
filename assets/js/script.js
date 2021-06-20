@@ -7,6 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   document.getElementById("form-connexion").addEventListener("click", async (event) => {
     event.preventDefault();
+    console.log("Btn cliqué");
 
     const data = {
       firstname: document.getElementById("firstname"),
