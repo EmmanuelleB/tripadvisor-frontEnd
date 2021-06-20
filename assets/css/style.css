@@ -158,11 +158,9 @@ p {
 /* ------------- */
 /* MODAL */
 /* ------------- */
-
-.modal {
-  display: none;
+.no-scroll {
+  overflow: hidden;
 }
-
 .modal-window {
   background-color: rgba(0, 0, 0, 0.5);
   width: 100vw;
@@ -172,6 +170,9 @@ p {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.hidden-modal {
+  display: none;
 }
 
 .container-modal {
@@ -442,11 +443,13 @@ nav span {
   justify-content: space-between;
   max-height: 100%;
   max-width: 100%;
+  border: 2px solid violet;
 }
 
 .section1 .categorie {
   width: 23%;
   margin-right: 30px;
+  border: 2px solid orange;
 }
 
 .section1 .carroussel {
@@ -454,6 +457,7 @@ nav span {
   display: flex;
   overflow: hidden;
   overflow-x: scroll;
+  border: 2px solid red;
 }
 
 /* Hide scrollbar for Chrome, Safari and Opera */
@@ -505,7 +509,6 @@ nav span {
   display: flex;
   max-height: 100%;
   max-width: 100%;
-  border: 2px solid turquoise;
 }
 
 .section2 a {
@@ -513,7 +516,6 @@ nav span {
   height: 100%;
   color: black;
   text-decoration: none;
-  border: 2px solid red;
 }
 
 .section2 a:not(:last-child) {
@@ -854,5 +856,10 @@ footer span {
 
   .section1 .carroussel a {
     width: calc(100% / 2.5 - 30px / 3);
+  }
+
+  .section1 .carroussel a div:first-child {
+    border: 3px solid greenyellow;
+    height: 70%;
   }
 }
