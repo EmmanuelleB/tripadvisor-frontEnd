@@ -441,15 +441,11 @@ nav span {
 .section1 {
   display: flex;
   justify-content: space-between;
-  max-height: 100%;
-  max-width: 100%;
-  border: 2px solid violet;
 }
 
 .section1 .categorie {
   width: 23%;
   margin-right: 30px;
-  border: 2px solid orange;
 }
 
 .section1 .carroussel {
@@ -474,7 +470,6 @@ nav span {
 .section1 .carroussel a {
   box-sizing: border-box;
   width: calc(100% / 3 - 30px / 3);
-  height: 100%;
   color: black;
   text-decoration: none;
   flex-shrink: 0;
@@ -507,13 +502,10 @@ nav span {
 
 .section2 {
   display: flex;
-  max-height: 100%;
-  max-width: 100%;
 }
 
 .section2 a {
-  flex: 1;
-  height: 100%;
+  flex: 1 1 100%;
   color: black;
   text-decoration: none;
 }
@@ -523,8 +515,11 @@ nav span {
 }
 
 .section2 a div:first-child {
-  width: 100%;
-  height: 40vh;
+  box-sizing: border-box;
+  height: 0;
+  padding-top: 70%;
+  /* (img-height / img-width * container-width) */
+
   background-repeat: no-repeat;
   background-size: cover;
   margin-bottom: 10px;
@@ -603,30 +598,48 @@ nav span {
   top: 30px;
 }
 
-.big-carrousel {
+.section4 {
   display: flex;
+  overflow: hidden;
+  overflow-x: scroll;
+  border: 2px solid turquoise;
 }
 
-.big-carrousel a {
-  flex: 1;
-  height: 400px;
-  width: calc(100% - 20px);
+/* Hide scrollbar for Chrome, Safari and Opera */
+.section4::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.section4 {
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.section4 a {
+  width: calc(100% / 3 - 20px / 3);
   color: black;
   text-decoration: none;
   box-sizing: border-box;
-}
-
-.big-carrousel a:not(:nth-child(3)) {
+  flex-shrink: 0;
   margin-right: 10px;
 }
 
-.big-carrousel > a > div > img {
-  height: 260px;
+.section4 a:not(:last-child) {
+  margin-right: 10px;
+}
+.section4 a div:first-child {
+  position: relative;
+  height: 70%;
+}
+
+.section4 > a > div > img {
+  height: 100%;
   width: 100%;
   object-fit: cover;
 }
 
-.big-carrousel p {
+.section4 p {
   font-size: 12px;
   color: #333333;
   margin-bottom: 5px;
@@ -696,6 +709,13 @@ footer span {
   .section1 .carroussel a {
     width: calc(100% / 3 - 60px / 3);
   }
+  .section4 {
+    margin-right: -20px;
+  }
+
+  .section4 a {
+    width: calc(100% / 3 - 60px / 3);
+  }
 }
 
 @media (max-width: 1024px) {
@@ -751,6 +771,30 @@ footer span {
 
   .section1 .carroussel > a {
     width: calc(100% / 2.5 - 30px / 3);
+  }
+  .section2 {
+    border: 2px solid greenyellow;
+    margin-right: -20px;
+    overflow: hidden;
+    overflow-x: scroll;
+  }
+  .section2 a {
+    flex: 1 1 calc(100% / 2.5 - 20px / 3);
+    flex-shrink: 0;
+  }
+
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .section2::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .section2 {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+  .section4 a {
+    width: calc(100% / 2.5);
   }
 }
 
@@ -853,13 +897,18 @@ footer span {
     margin-top: 50px;
     width: 100%;
   }
+}
 
+@media (max-width: 706px) {
   .section1 .carroussel a {
-    width: calc(100% / 2.5 - 30px / 3);
+    width: 80%;
   }
 
-  .section1 .carroussel a div:first-child {
-    border: 3px solid greenyellow;
-    height: 70%;
+  .section2 a {
+    flex: 1 1 80%;
+    flex-shrink: 0;
+  }
+  .section4 a {
+    width: 80%;
   }
 }
