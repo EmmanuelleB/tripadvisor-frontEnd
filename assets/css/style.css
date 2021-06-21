@@ -349,7 +349,7 @@ nav > a > div {
 }
 
 nav span {
-  width: 80px;
+  width: 120px;
   overflow: hidden;
   text-overflow: ellipsis;
 }
@@ -672,7 +672,9 @@ footer span {
   font-weight: bolder;
 }
 
+/* ------------------ */
 /* medias queries */
+/* ------------------ */
 
 @media (max-width: 1184px) {
   nav {
