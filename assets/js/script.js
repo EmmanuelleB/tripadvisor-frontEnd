@@ -1,17 +1,36 @@
-document.addEventListener("DOMContentLoaded", () => {
+const $ = document;
+
+$.addEventListener("DOMContentLoaded", () => {
   console.log("Page chargée");
 
-  document.getElementById("btn-connexion").addEventListener("click", () => {
-    document.querySelector(".modal-window").classList.remove("hidden-modal");
-    document.querySelector("body").classList.add("no-scroll");
+  const header = $.querySelector("header");
+  const btnConnect = $.getElementById("btn-connexion");
+  const modal = $.querySelector(".modal-window");
+  const body = $.querySelector("body");
+  const btnCloseForm = $.querySelector("closed-form-connexion");
+  const form = $.getElementById("form-connexion");
+
+  window.addEventListener("scroll", () => {
+    const scroll = window.scrollY;
+    console.log(scroll);
+    if (scroll !== 0) {
+      header.classList.add("header-border");
+    } else {
+      header.classList.remove("header-border");
+    }
   });
 
-  document.querySelector("closed-form-connexion").addEventListener("click", () => {
-    document.querySelector(".modal-window").classList.add("hidden-modal");
-    document.querySelector("body").classList.remove("no-scroll");
+  btnConnect.addEventListener("click", () => {
+    modal.classList.remove("hidden-modal");
+    body.classList.add("no-scroll");
   });
 
-  document.getElementById("form-connexion").addEventListener("click", async (event) => {
+  btnCloseForm.addEventListener("click", () => {
+    modal.classList.add("hidden-modal");
+    body.classList.remove("no-scroll");
+  });
+
+  form.addEventListener("click", async (event) => {
     event.preventDefault();
     console.log("Btn cliqué");
 
