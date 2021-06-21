@@ -7,7 +7,7 @@ $.addEventListener("DOMContentLoaded", () => {
   const btnConnect = $.getElementById("btn-connexion");
   const modal = $.querySelector(".modal-window");
   const body = $.querySelector("body");
-  const btnCloseForm = $.querySelector("closed-form-connexion");
+  const btnCloseForm = $.querySelector(".closed-form-connexion");
   const form = $.getElementById("form-connexion");
 
   window.addEventListener("scroll", () => {
