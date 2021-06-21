@@ -8,7 +8,7 @@ body {
 .container {
   max-width: 1184px;
   margin: 0 auto;
-  border: 1px solid red;
+  /* border: 1px solid red; */
   padding: 0 20px;
 }
 
@@ -453,7 +453,6 @@ nav span {
   display: flex;
   overflow: hidden;
   overflow-x: scroll;
-  border: 2px solid red;
 }
 
 /* Hide scrollbar for Chrome, Safari and Opera */
@@ -561,9 +560,8 @@ nav span {
 }
 
 .section3 > div {
-  flex: 1;
+  width: calc(100% / 3 - 60px / 2);
   background-color: #f9f1ec;
-  height: 60px;
   border-radius: 20px;
   padding: 20px;
 }
@@ -602,7 +600,6 @@ nav span {
   display: flex;
   overflow: hidden;
   overflow-x: scroll;
-  border: 2px solid turquoise;
 }
 
 /* Hide scrollbar for Chrome, Safari and Opera */
@@ -773,7 +770,6 @@ footer span {
     width: calc(100% / 2.5 - 30px / 3);
   }
   .section2 {
-    border: 2px solid greenyellow;
     margin-right: -20px;
     overflow: hidden;
     overflow-x: scroll;
@@ -793,6 +789,28 @@ footer span {
     -ms-overflow-style: none; /* IE and Edge */
     scrollbar-width: none; /* Firefox */
   }
+
+  .section3 {
+    overflow: hidden;
+    overflow-x: scroll;
+  }
+
+  /* Hide scrollbar for Chrome, Safari and Opera */
+  .section3::-webkit-scrollbar {
+    display: none;
+  }
+
+  /* Hide scrollbar for IE, Edge and Firefox */
+  .section3 {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+
+  .section3 > div {
+    width: calc(100% / 2.8 - 60px / 3);
+    flex-shrink: 0;
+  }
+
   .section4 a {
     width: calc(100% / 2.5);
   }
@@ -897,6 +915,10 @@ footer span {
     margin-top: 50px;
     width: 100%;
   }
+  .section3 > div {
+    width: calc(100% / 2.5 - 60px / 3);
+    flex-shrink: 0;
+  }
 }
 
 @media (max-width: 706px) {
@@ -908,6 +930,12 @@ footer span {
     flex: 1 1 80%;
     flex-shrink: 0;
   }
+
+  .section3 > div {
+    width: calc(100% / 1.5 - 60px / 3);
+    flex-shrink: 0;
+  }
+
   .section4 a {
     width: 80%;
   }
