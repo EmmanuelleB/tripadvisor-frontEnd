@@ -312,6 +312,7 @@ header a:hover {
   height: 25px;
   width: 150px;
   border-radius: 5px;
+  padding-left: 2em;
 }
 
 /* ------------- */
